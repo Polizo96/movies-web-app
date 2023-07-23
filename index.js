@@ -21,7 +21,7 @@ function getMovie(title) {
 
 function fetchMovieFromApi(title) {
   let ajaxRequest = new XMLHttpRequest();
-  ajaxRequest.open('GET', `http://omdbapi.com/?t=${title}&apikey=cafb6ed2`, true);
+  ajaxRequest.open('GET', `http://omdbapi.com/?t=${title}&apikey=xxxxxxx`, true);
   ajaxRequest.timeout = 5000;
   ajaxRequest.ontimeout = (e) => onApiError();
   ajaxRequest.onreadystatechange = function() {
